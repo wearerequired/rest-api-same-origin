@@ -1,6 +1,6 @@
 # REST API Strict Origin
 
-Limits `Access-Control-Allow-Origin` for REST API access to only allowed origins by `is_allowed_http_origin()`. By default this includes the home and site URLs.
+Limits `Access-Control-Allow-Origin` for REST API access to only allowed origins by [`is_allowed_http_origin()`](https://developer.wordpress.org/reference/functions/is_allowed_http_origin/). By default this includes the home and site URLs.
 
 ## Installation
 
