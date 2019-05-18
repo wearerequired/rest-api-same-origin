@@ -1,0 +1,50 @@
+{
+  "name": "wearerequired/rest-api-same-origin",
+  "type": "wordpress-plugin",
+  "description": "WordPress plugin to limit the Access-Control-Allow-Origin header to only allowed origins.",
+  "homepage": "https://github.com/wearerequired/rest-api-same-origin",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "required",
+      "email": "support@required.ch",
+      "homepage": "https://required.com",
+      "role": "Company"
+    },
+    {
+      "name": "Dominik Schilling",
+      "email": "dominik@required.ch",
+      "role": "Developer"
+    }
+  ],
+  "keywords": [
+    "wordpress",
+    "rest-api",
+    "cors",
+    "origin"
+  ],
+  "require": {
+    "php": ">=7.1"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "require-dev": {
+    "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
+    "wearerequired/coding-standards": "^1.0"
+  },
+  "scripts": {
+    "format": "vendor/bin/phpcbf --standard=phpcs.xml.dist --report-summary --report-source",
+    "lint": "vendor/bin/phpcs --standard=phpcs.xml.dist --report-summary --report-source"
+  },
+  "autoload": {
+    "files": [
+      "inc/namespace.php"
+    ]
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "0.1-dev"
+    }
+  }
+}
